@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tus Ojos Merecen lo Mejor</title>
+    <link rel="shortcut icon" href="logo.jpg">
+    <link rel="stylesheet" href="lentes.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        h1 {
+            margin: 10px 0;
+            font-size: 2.5em;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .seccion {
+            margin: 40px 0;
+        }
+
+        .seccion h2 {
+            font-size: 2em;
+            color: #003366;
+        }
+
+        .seccion ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .seccion ul li {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal img {
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2em;
+            color: white;
+            cursor: pointer;
+        }
+
+        .boton-regreso {
+            display: inline-block;
+            margin: 30px 0;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #003366;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .boton-regreso:hover {
+            background-color: #005599;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Logo" class="logo">
+        <h1>¡TUS OJOS MERECEN LO MEJOR!</h1>
+    </header>
+
+    <main>
+        <section id="inicio" class="seccion-principal">
+            <h2>Cambia tu forma de ver las cosas</h2>
+            <p>FUSIÓN ALTERNA A.C.</p>
+            <p>Examen de la vista <strong>GRATIS</strong></p>
+            <p><strong>HORARIO:</strong> JUEVES 11:00 a.m.</p>
+        </section>
+
+        <section id="desarrollo" class="seccion">
+            <h2>¿Cómo vamos a ayudar?</h2>
+            <ul>
+                <li>Recolección de fondos para apoyar a quienes necesitan lentes.</li>
+                <li>Actividades y eventos para generar recursos.</li>
+                <li>Diagnóstico y presupuesto personalizado para quienes requieran lentes.</li>
+                <li>Listado de personas beneficiadas y seguimiento de su progreso.</li>
+            </ul>
+        </section>
+
+        <section id="contacto" class="seccion">
+            <h2>Contacto</h2>
+            <p><strong>Teléfono:</strong> C 449 151 0831</p>
+            <p><strong>Dirección:</strong> C. Antonio Hernández Gallegos 317, José López Portillo</p>
+        </section>
+
+        <div class="gallery">
+            <img src="len2.jpg" alt="Imagen de promoción" onclick="openModal(this)">
+            <img src="len3.jpg" alt="Imagen de ayuda" onclick="openModal(this)">
+            <img src="len4.jpg" alt="Imagen de contacto" onclick="openModal(this)">
+            <img src="len5.jpg" alt="Imagen de contacto" onclick="openModal(this)">
+            <img src="len6.jpg" alt="Imagen de contacto" onclick="openModal(this)">
+            <img src="len7.jpg" alt="Imagen de contacto" onclick="openModal(this)">
+        </div>
+
+        <a href="intento2.html" class="boton-regreso">Regresar a la página principal</a>
+    </main>
+
+    <footer>
+        <p>© 2024 Fusión Alterna A.C.</p>
+    </footer>
+
+    
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-img" src="">
+    </div>
+
+    <script>
+        function openModal(image) {
+            var modal = document.getElementById("modal");
+            var modalImg = document.getElementById("modal-img");
+            modal.style.display = "flex";
+            modalImg.src = image.src;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("modal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>

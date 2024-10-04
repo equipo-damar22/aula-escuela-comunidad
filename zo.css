@@ -1,0 +1,130 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7da; /* Fondo pistache claro */
+    color: #2d3436;
+}
+
+header {
+    background-color: #00b894; /* Verde vibrante */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    font-size: 3em;
+    color: white;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    margin-top: 15px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #dfe6e9; /* Blanco suave */
+}
+
+.introduccion {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #55efc4; /* Pistache */
+}
+
+.introduccion h2 {
+    font-size: 2.5em;
+    color: #2d3436; /* Gris oscuro */
+}
+
+.introduccion p {
+    font-size: 1.2em;
+    color: #636e72;
+    margin: 20px 0;
+}
+
+.boton-explorar {
+    background-color: #00b894;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.boton-explorar:hover {
+    background-color: #00a884;
+}
+
+.galeria-animales {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    background-color: #e0f7da; /* Fondo verde pistache */
+}
+
+.animal {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+    width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.animal:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.animal img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.animal h3 {
+    margin: 15px 0 10px;
+    color: #2d3436;
+}
+
+footer {
+    background-color: #00b894; /* Verde vibrante */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+.social a:hover {
+    color: #dfe6e9; /* Blanco suave */
+}

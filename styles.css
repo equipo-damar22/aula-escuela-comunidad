@@ -1,0 +1,72 @@
+
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #a8e6cf, #55efc4); /* Fondo pistache */
+    color: #333;
+}
+
+header {
+    background-color: #00cec9; /* Azul suave */
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 3em;
+    color: white;
+    margin: 0;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.galeria-lentes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 20px;
+}
+
+.lente {
+    background-color: #a8e6cf; /* Fondo pistache */
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    width: 200px;
+}
+
+.lente:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #00b894; /* Verde pistache oscuro */
+}
+
+.lente img {
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #00cec9; /* Borde azul */
+}
+
+.lente h2 {
+    margin: 15px 0 10px;
+    color: #0984e3; /* Azul fuerte */
+    font-size: 1.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.lente p {
+    color: #636e72; /* Gris suave */
+    font-size: 1em;
+}
+
+footer {
+    background-color: #00b894; /* Verde pistache oscuro */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
